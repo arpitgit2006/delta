@@ -1,0 +1,23 @@
+#outer{
+    border: 4px solid black;
+    height: 400px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.773);
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin: 16px;
+}
+#red{
+    margin-top: 25px;
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}

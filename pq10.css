@@ -55,3 +55,14 @@ p{
     margin-top: 35px;
     font-size: 30px;
 }
+.bgimg{
+    height: 400px;
+    width: 600px;
+    background-image: url(https://images.stockcake.com/public/2/d/e/2de50be3-20ab-43ec-bb00-ab386a713781_large/mystical-jungle-waterfall-stockcake.jpg);
+    background-size:auto;
+}
+.bgimg > p{
+    color: rgb(255, 255, 255);
+    font-size:80px;
+    padding-top: 40px;
+}

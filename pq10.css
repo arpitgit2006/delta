@@ -2,6 +2,7 @@
     border: 4px solid black;
     height: 400px;
     width: 140px;
+    box-shadow: 6px 6px 10px rgb(84, 84, 84);
     background-color: rgba(0, 0, 0, 0.773);
 }
 .inner{
@@ -43,6 +44,7 @@
     margin-top: 100px;
     transition: 2s ;
     background-color: orange;
+    
 }
 .transform:hover{
     rotate: 360deg;

@@ -3,8 +3,10 @@
     width: 600px;
     background-color: rgb(145, 188, 188);
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 100px 100px ;
+    /* grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px ; */
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 .item{
     text-align: center;

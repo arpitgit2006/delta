@@ -8,13 +8,16 @@
     /* row-gap: 40px;
     column-gap: 40px; */
     grid-gap: 20px;
-}
+    justify-items: center;
+    align-items: center;
+}   
 .item{
     text-align: center;
-    /* height: 50px; */
+    height: 50px;
     border: black solid;
-    /* width:180px; */
+    width:150px;
     background-color:rgb(255, 217, 0);
+    
 }
 .one{
     /* grid-column-start: 1;

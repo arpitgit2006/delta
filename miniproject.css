@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.main_box{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREveC3JtELdCrcuX6EJ4nr4a2ZuZXaPU3VWNDRu2bH5g&s=10);
+    height: 100vh;
+    background-size: cover;
+}
+.button1{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.button2{
+    color: white;
+    font-size: 35px;
+}
+.navbar{
+    position: fixed;
+    left: -150px;
+}

@@ -30,3 +30,14 @@
     margin-top: 50px;
     margin-left: 85px;
 }
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 100px;
+}
+.box:hover{
+    transform: scale(2);
+    background-color: rgb(255, 153, 0);
+    transition: 0.1s;
+}

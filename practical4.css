@@ -3,19 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, sans-serif;
     background: white;
     color: #111;
     font-size: 16px;
 }
-
-/* Navbar */
 .navbar {
     width: 96%;
     height: 72px;
@@ -40,7 +33,6 @@ body {
     gap: 22px;
     flex-wrap: wrap;
 }
-
 .navbar a {
     color: white;
     text-decoration: none;
@@ -48,7 +40,6 @@ body {
     font-weight: 600;
     transition: opacity 0.2s ease;
 }
-
 .navbar a:hover {
     opacity: 0.8;
 }

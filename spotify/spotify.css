@@ -14,7 +14,6 @@
     width: 340px;
     border-radius: 1rem;
     margin-right: 0.5rem;
-
 }
 .maincont{
     background-color: #121212;
@@ -27,11 +26,12 @@
     padding-bottom: 90px;
 }
 .player{
-    background-color: black;
     position: fixed;
     bottom: 0px;
     height: 72px;
     width: 100% ;
+    display: flex;
+    background-color: black;
 }
 a{
     text-decoration: none;
@@ -190,4 +190,88 @@ a{
     font-weight: 100;
     opacity: .8;
     font-size: .75rem;
+}
+.album{
+    display: flex;
+    width: 20rem;
+}
+.singer{
+    font-weight: 100;
+    font-size: .65rem;
+}
+.trackP{
+    font-size: .89rem;
+}
+.album img{
+    height: 56px;
+    margin: 8px;
+}
+.track-info{
+    margin: 20px;
+}
+.path-icon{
+    font-size: 1rem;
+    opacity: .7;
+    margin: 28px;
+}
+.player-icon1{
+    height: 14px;
+    opacity: .6;
+    transition: .3s;
+}
+.player-icon2{
+    height: 16px;
+    opacity: .6;
+    transition: .3s;
+}
+.player-icon3{
+    height: 32px;
+    opacity: .6;
+    transition: .3s;
+}
+.player-icon1:hover{
+    opacity: 1;
+}
+.player-icon2:hover{
+    opacity: 1;
+}
+.player-icon3:hover{
+    opacity: 1;
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+.time-stamp{
+    width: 50%;
+}
+.picons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 8px;
+}
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: rgb(172, 172, 172);
+    border-radius: 100px;
+    height: .2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width:16px;
+    border-radius: 100%;
+    margin-top: -6px;
+    background-color: #1db954;
+}
+.time{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

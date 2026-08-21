@@ -20,7 +20,11 @@
     background-color: #121212;
     flex: 1;
     border-radius: 1rem;
-    overflow: auto;
+    overflow:auto;
+    padding:1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 90px;
 }
 .player{
     background-color: black;
@@ -154,4 +158,36 @@ a{
     .hide{
         display: none;
     }
+}
+.card-container{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.card{
+    width:150px;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding:1rem;
+    flex-shrink: 0;
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+    font-size: .85rem;
+    padding: .5rem 0rem .5rem 0rem;
+}
+.card-info{
+    font-weight: 100;
+    opacity: .8;
+    font-size: .75rem;
 }

@@ -7,4 +7,8 @@ console.log(`a>b ${a>b}`);
 console.log(`a<b ${a<b}`);
 console.log(a===b);
 console.log(a==="10");
+if(a<b){
+    console.log("a is smaller than b");
+    
+}
 

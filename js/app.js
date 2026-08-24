@@ -12,3 +12,5 @@ if(a<b){
 }
 console.error("this is an error");
 console.warn("this is an error");
+let name= prompt("enter name");
+console.log(name);

@@ -10,4 +10,5 @@ console.log(a==="10");
 if(a<b){
     console.log("a is smaller than b");   
 }
-alert("this is an alert");
+console.error("this is an error");
+console.warn("this is an error");

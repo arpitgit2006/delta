@@ -8,3 +8,4 @@ console.log(s.indexOf("RP"));
 console.log(s.indexOf("Is"));
 console.log(s.indexOf("arpit"));
 console.log(s.replace("Js","html"));
+console.log(s.repeat(4));

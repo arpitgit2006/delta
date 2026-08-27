@@ -1,11 +1,2 @@
 let a="   Arpit  ";
-console.log(a);
-console.log(a.trim());
-let s="aRPit SharMa Is lEArniNg Js";
-console.log(s.toUpperCase());
-console.log(s.toLowerCase());
-console.log(s.indexOf("RP"));
-console.log(s.indexOf("Is"));
-console.log(s.indexOf("arpit"));
-console.log(s.replace("Js","html"));
-console.log(s.repeat(4));
+let student=["aman","arpit","khushi"];

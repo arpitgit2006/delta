@@ -4,3 +4,7 @@ console.log(a.trim());
 let s="aRPit SharMa Is lEArniNg Js";
 console.log(s.toUpperCase());
 console.log(s.toLowerCase());
+console.log(s.indexOf("RP"));
+console.log(s.indexOf("Is"));
+console.log(s.indexOf("arpit"));
+

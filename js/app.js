@@ -1,5 +1,5 @@
-let a="   Arpit  ";
-let student=["aman","arpit","khushi"];
-console.log(student);
-console.log(student.length);
-
+function oneToFive(){
+    for(let i=1;i<=5;i++){
+        console.log(`${i} `);
+    }
+}

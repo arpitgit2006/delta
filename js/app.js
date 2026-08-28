@@ -1,5 +1,5 @@
-function oneToFive(){
-    for(let i=1;i<=5;i++){
-        console.log(`${i} `);
-    }
+function rollDice(){
+    let random=Math.floor(Math.random()*6)+1;
+    console.log(random);
 }
+rollDice();

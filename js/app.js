@@ -7,4 +7,6 @@ const post={
     likes: 24356,
     comment: 345,
     share: 27
-};
+}; 
+// post['username'];
+// post.username;

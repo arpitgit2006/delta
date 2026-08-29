@@ -11,3 +11,4 @@ const post={
 // post['username'];
 // post.username;
 // post.username="@khushi";
+// delete post.likes;

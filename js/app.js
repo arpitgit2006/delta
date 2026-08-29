@@ -10,3 +10,4 @@ const post={
 }; 
 // post['username'];
 // post.username;
+// post.username="@khushi";

@@ -12,3 +12,7 @@ const post={
 // post.username;
 // post.username="@khushi";
 // delete post.likes;
+console.log("hello");
+setInterval(()=>{
+    console.log("there!");
+},3000);

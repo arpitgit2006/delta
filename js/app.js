@@ -1,18 +1,4 @@
-function rollDice(){
-    let random=Math.floor(Math.random()*6)+1;
-    console.log(random);
-}
-const post={
-    username: "@arpitsharma",
-    likes: 24356,
-    comment: 345,
-    share: 27
-}; 
-// post['username'];
-// post.username;
-// post.username="@khushi";
-// delete post.likes;
-console.log("hello");
-setInterval(()=>{
-    console.log("there!");
-},3000);
+let arr=[1,2,3,4,5];
+arr.forEach((el) => {
+    console.log(el);
+});

@@ -1,5 +1,7 @@
 let arr=[1,2,3,4,5];
-function print(el){
-    console.log(el);
+console.log(arr);
+function multiplyby2(el){
+    return el*2;
 }
-arr.forEach(print);
+let double=arr.map(multiplyby2);
+console.log(double);

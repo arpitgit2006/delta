@@ -11,3 +11,8 @@ console.log(double.every((el)=>{
     return el%2==0;
 }));
 console.log(...arr);
+let [first,second,third,...others]=arr;
+console.log(first);
+console.log(second);
+console.log(third);
+console.log(others);

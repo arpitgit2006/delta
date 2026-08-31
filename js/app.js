@@ -4,3 +4,9 @@ let double=arr.filter((el) => {
     return (el%2==0);
 });
 console.log(double);
+console.log(arr.every((el)=>{
+    return el%2==0;
+}));
+console.log(double.every((el)=>{
+    return el%2==0;
+}));

@@ -10,3 +10,4 @@ console.log(arr.every((el)=>{
 console.log(double.every((el)=>{
     return el%2==0;
 }));
+console.log(...arr);

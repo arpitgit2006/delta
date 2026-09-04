@@ -13,3 +13,5 @@ si.setAttribute("id","spidermanimg");
 pa.style.color="pink";
 let heading=document.querySelector("h1");
 heading.classList.add("underline");
+let h2=document.querySelector("h2");
+h2.remove();

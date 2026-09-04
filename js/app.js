@@ -10,3 +10,4 @@ button.addEventListener('click',() => { console.log(input.value); })
 let si=document.querySelector("#main_img");
 si.getAttribute("id");
 si.setAttribute("id","spidermanimg");
+pa.style.color="pink";

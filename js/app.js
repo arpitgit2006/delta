@@ -4,3 +4,8 @@ console.dir(imgobj);
 imgobj.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIaIb5aHdB6B2oMVoz2mBPbhwOmSfKL4jCVGGttT47tA&s=10";
 let pobj=document.querySelector("#para");
 pobj.innerHTML="testing";
+let pa=document.createElement('p');
+console.dir(pa);
+pa.innerText="learning to insert new element";
+let h1=document.querySelector('h1');
+h1.appendChild(pa);

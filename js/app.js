@@ -9,3 +9,6 @@ console.dir(pa);
 pa.innerText="learning to insert new element";
 let h1=document.querySelector('h1');
 h1.appendChild(pa);
+let box=document.querySelector('#box');
+let button=document.querySelector("#button");
+box.remove("button");

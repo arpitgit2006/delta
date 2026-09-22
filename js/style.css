@@ -1,6 +1,9 @@
-#para{
-    color: green;
+div{
+    height:100px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
 }
-.underline{
-    text-decoration: underline black ;
+body{
+    text-align: center;
 }

@@ -1,21 +1,6 @@
-function genran(){
-    let r=Math.floor(Math.random()*255);
-    let g=Math.floor(Math.random()*255);
-    let b=Math.floor(Math.random()*255);
-    let color = `rgb(${r},${g},${b})`;
-    return color;
-}
-let btn = document.querySelector("button");
-btn.addEventListener("click",function(){
-    let ran=genran();
-    let heading=document.querySelector("h3");
-    heading.innerText=ran;
-    let clr=document.querySelector("div");
-    clr.style.backgroundColor=ran;
-    this.style.backgroundColor=ran;
-});
-let kb=document.querySelector("#kb");
-kb.addEventListener("keydown",function(event){
-    console.log("code=",event.code);
-    console.log("key=",event.key);
+let form=document.querySelector("form");
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let inp=document.querySelector("#txt");
+    console.log(txt.value);
 })

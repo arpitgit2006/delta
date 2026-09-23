@@ -12,4 +12,5 @@ btn.addEventListener("click",function(){
     heading.innerText=ran;
     let clr=document.querySelector("div");
     clr.style.backgroundColor=ran;
+    this.style.backgroundColor=ran;
 });

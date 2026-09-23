@@ -14,3 +14,8 @@ btn.addEventListener("click",function(){
     clr.style.backgroundColor=ran;
     this.style.backgroundColor=ran;
 });
+let kb=document.querySelector("#kb");
+kb.addEventListener("keydown",function(event){
+    console.log("code=",event.code);
+    console.log("key=",event.key);
+})

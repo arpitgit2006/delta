@@ -1,20 +1,13 @@
-let h1=document.querySelector("h1");
-function changeclr(color,delay,innerfn){
-    setTimeout(()=>{
-        h1.style.color=color;
-        if(innerfn)
-            innerfn();
-    },delay);   
+async function greet() {
+    throw "a big A&& error";
+    console.log("hello");
 }
-function start(){
-    changeclr("red",1000,()=>{
-        changeclr("yellow",1000,()=>{
-            changeclr("green",1000,()=>{
-                changeclr("blue",1000,()=>{
-                    start();
-                });
-            });
-        });
-    });
-}
-start();
+greet()
+.then((result)=>{
+    console.log("greeted successfully");
+    console.log(result);
+})
+.catch((error)=>{
+    console.log("error occured");
+    console.log(error);
+})

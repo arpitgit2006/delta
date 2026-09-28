@@ -1,24 +1,11 @@
-function getnum(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            let num=Math.floor(Math.random()*10);
-            if(num>6)
-                reject("rejected");
-            console.log(num);
-            resolve("resolved");
-        },1000);
-    });
-}
-async function demo(){
-    try{
-        await getnum();
-        await getnum();
-        await getnum();
-        await getnum();
-        await getnum();
-    }
-    catch(err){
-        console.log(err);
-    }
-}
-demo();
+let j='{"fact":"It has been scientifically proven that stroking a cat can lower one blood pressure.","length":85}';
+console.log("j = ",j);
+let o=JSON.parse(j);
+console.log("o.fact = ",o.fact);
+let obj={
+    "hello":"greetings!",
+    "bye":"seeing off!"
+};
+console.log("obj = ",obj);
+let json=JSON.stringify(obj);
+console.log("json = ",json);

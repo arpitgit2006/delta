@@ -1,13 +1,17 @@
-async function greet() {
-    throw "a big A&& error";
-    console.log("hello");
+function getnum(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            num=Math.floor(Math.random()*10);
+            console.log(num);
+            resolve();
+        },1000);
+    });
 }
-greet()
-.then((result)=>{
-    console.log("greeted successfully");
-    console.log(result);
-})
-.catch((error)=>{
-    console.log("error occured");
-    console.log(error);
-})
+async function demo(){
+    await getnum();
+    await getnum();
+    await getnum();
+    await getnum();
+    await getnum();
+}
+demo();

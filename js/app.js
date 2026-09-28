@@ -1,17 +1,24 @@
 function getnum(){
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            num=Math.floor(Math.random()*10);
+            let num=Math.floor(Math.random()*10);
+            if(num>6)
+                reject("rejected");
             console.log(num);
-            resolve();
+            resolve("resolved");
         },1000);
     });
 }
 async function demo(){
-    await getnum();
-    await getnum();
-    await getnum();
-    await getnum();
-    await getnum();
+    try{
+        await getnum();
+        await getnum();
+        await getnum();
+        await getnum();
+        await getnum();
+    }
+    catch(err){
+        console.log(err);
+    }
 }
 demo();

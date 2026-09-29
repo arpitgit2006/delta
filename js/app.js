@@ -1,16 +1,17 @@
-let url="https://dog.ceo/api/breeds/image/random";
-async function getimg(){
+let url="https://icanhazdadjoke.com/";
+async function getjoke() {
     try{
-        let img = await axios.get(url);
-        console.log(img.data.message);
-        return img.data.message;
-    }catch(err){
-        return err;
+        let config={headers:{Accept: "application/json"}};
+        let j=await axios(url,config);
+        return j.data.joke;
+    }
+    catch(err){
+        console.log(err);
     }
 }
-let img=document.querySelector("img");
-let btn=document.querySelector("#btn");
+let btn=document.querySelector("button")
+let p=document.querySelector("p");
 btn.addEventListener("click",async ()=>{
-    let f=await getimg();
-    img.src=f;
+    let j=await getjoke();
+    p.innerHTML=j;
 })

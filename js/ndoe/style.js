@@ -1,8 +1,6 @@
 import figlet from "figlet";
-
-async function doStuff() {
-  const text = await figlet.text("Arpit Is Learning Nodejs");
-  console.log(text);
+async function print() {
+    let val=await figlet("Arpit Sharma");
+    console.log(val);
 }
-
-doStuff();
+print();

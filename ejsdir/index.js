@@ -15,6 +15,10 @@ app.get("/rolldice",(req,res)=>{
     let val=Math.floor(Math.random()*6)+1;
     res.render("rolldice.ejs",{ num: val});
 });
+app.get("/ig/:username",(req,res)=>{
+    let name =req.params;
+    res.render("instagram.ejs",{user :name.username});
+});
 app.get("/",(req,res)=>{
     res.send("root path");
 });

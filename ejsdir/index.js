@@ -16,9 +16,10 @@ app.get("/rolldice",(req,res)=>{
     res.render("rolldice.ejs",{ num: val});
 });
 app.get("/ig/:username",(req,res)=>{
-    let followers=["arpit","anmol","khushi","anubhav","shivam"];
-    let name =req.params;
-    res.render("instagram.ejs",{user :name.username, flw:followers});
+    const user=req.params;
+    const igdata=require("./data.json");
+    const json=igdata[user.username];
+    res.render("instagram.ejs",{data : json});
 });
 app.get("/",(req,res)=>{
     res.send("root path");

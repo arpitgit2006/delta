@@ -7,5 +7,11 @@
 </head>
 <body>
     <h1>DICE VALUE= <%= num %></h1>
+    <% if(num==6) { %>
+    <h2>MAXIMUM! Roll it again.</h2>
+    <% } %>
+    <% if(num==1) { %>
+    <h2>MINIMUM! Better luck next time.</h2>
+    <% } %>
 </body>
 </html>

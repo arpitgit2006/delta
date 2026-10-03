@@ -10,6 +10,7 @@
             width: 300px;
         }
     </style>
+    <%-include("includes/style.ejs")%>
 </head>
 <body>
     <h1>This page belongs to @<%= data.name %></h1>
@@ -20,6 +21,7 @@
         <p>Likes : <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Comments : <%= post.comments %></p>
         <hr>
     <%}%>
+    <%-include("includes/footer.ejs")%>
 </body>
 </html>
 

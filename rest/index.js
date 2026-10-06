@@ -37,3 +37,8 @@ app.post("/posts",(req,res)=>{
     posts.push(req.body);
     res.redirect("/posts");
 });
+app.get("/posts/:id",(req,res)=>{
+    let {id}=req.params;
+    let post=posts.find(post=>(post.username==id));
+    res.render("view.ejs",{post});
+});

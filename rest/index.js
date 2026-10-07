@@ -9,7 +9,7 @@ app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(methodoverride("_method"));
 app.use(express.static(path.join(__dirname,"public")));
-const posts=[
+let posts=[
     {
         username: "apnacollege",
         content: "teaching rest api"
@@ -49,6 +49,11 @@ app.get("/posts/:id/edit",(req,res)=>{
     let {id}=req.params;
     let post=posts.find(post=> post.username==id);
     res.render("edit.ejs",{post});
+});
+app.delete("/posts/:id/delete",(req,res)=>{
+    let {id}=req.params;
+    posts=posts.filter(post => post.username!==id);
+    res.redirect("/posts");
 });
 app.get("/posts/:id",(req,res)=>{
     let {id}=req.params;

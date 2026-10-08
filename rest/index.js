@@ -18,7 +18,7 @@ let posts=[
         username: "Arpit Sharma",
         content: "learning rest api"
     },
-    {
+    {  
         username: "akanksha",
         content: "talking to arpit"
     }

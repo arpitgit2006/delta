@@ -57,5 +57,12 @@ async function main(){
             res.render("home.ejs",{count});
         });
     });
+    app.get("/user",(req,res)=>{
+        let q="SELECT id,username,email FROM user";
+        connection.query(q,(err,result)=>{
+            let data=result;
+            res.render("user.ejs",{data});
+        });
+    });
 }
     main();

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        *{
+            background-color: rgb(213, 121, 121);
+        }
+        table{
+            background-color: rgba(7, 155, 155, 0.71);
+        }
+        td{
+            background-color: rgb(15, 192, 192);
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Sr no.</td>
+            <td>id</td>
+            <td>username</td>
+            <td>email</td>
+        </tr>
+        <%for(let i=0;i<100;i++) {%>
+            <tr>
+                <td><%= i+1 %></td>
+                <td><%= data[i].id %></td>
+                <td><%= data[i].username %></td>
+                <td><%= data[i].email %></td>
+            </tr>
+        <%} %>  
+    </table>  
+</body>
+</html>

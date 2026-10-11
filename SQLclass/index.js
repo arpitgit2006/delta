@@ -76,8 +76,22 @@ async function main(){
         });
     });
     app.patch("/user/:id",(req,res)=>{
+        let {id}=req.params;
         let body=req.body;
-        let q=
+        let q=`SELECT password FROM user WHERE id='${id}'`
+        connection.query(q,(err,result)=>{
+            let pass=result[0].password;
+            if(pass!=body.password){
+                res.send("INCORRECT PASSWORD! YOU CAN'T EDIT");
+            }
+            else{
+                let nq=`UPDATE user SET username='${body.username}', email='${body.email}' where id='${id}'`;
+                connection.query(nq,(err,result)=>{
+                    res.send("DATA UPDATED SUCCESSFULLY");
+                });
+            }
+        });
+        
     });
 }
     main();

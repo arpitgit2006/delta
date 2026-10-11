@@ -1,6 +1,9 @@
 const mysql = require('mysql2');
 const express=require("express");
 const app=express();
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended:true}));
 app.set("view engine","ejs");
 const port=8080;
 async function main(){
@@ -63,6 +66,18 @@ async function main(){
             let data=result;
             res.render("user.ejs",{data});
         });
+    });
+    app.get("/user/:id/edit",(req,res)=>{
+        let {id} = req.params;
+        q=`SELECT * FROM user WHERE '${id}'=id`
+        connection.query(q,(err,result)=>{
+            let user=result[0];
+            res.render("edit.ejs",{user});
+        });
+    });
+    app.patch("/user/:id",(req,res)=>{
+        let body=req.body;
+        let q=
     });
 }
     main();

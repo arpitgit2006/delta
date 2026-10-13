@@ -13,5 +13,6 @@ const userschema=new mongoose.Schema({
     age: Number
 });
 const user=mongoose.model("user",userschema);
-const user1=new user({name:"anmol", email:"anmol@gmail.com", age:19});
-user1.save();
+user.find({age: {$gte:20}}).then((data)=>{
+    console.log(data);
+})

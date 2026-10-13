@@ -14,6 +14,7 @@ const userschema=new mongoose.Schema({
     age: Number
 });
 const user=mongoose.model("user",userschema);
-user.updateOne({name:"Arpit Sharma"},{age:20}).then((res)=>{
+user.deleteOne({name:"anmol"}).then(res=>{
     console.log(res);
-});
+    
+})

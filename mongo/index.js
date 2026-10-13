@@ -1,4 +1,5 @@
 const mongoose=require("mongoose");
+const { log } = require("node:console");
 main()
 .then(res =>{
     console.log("connnection succesfull");
@@ -13,6 +14,6 @@ const userschema=new mongoose.Schema({
     age: Number
 });
 const user=mongoose.model("user",userschema);
-user.find({age: {$gte:20}}).then((data)=>{
-    console.log(data);
-})
+user.updateOne({name:"Arpit Sharma"},{age:20}).then((res)=>{
+    console.log(res);
+});

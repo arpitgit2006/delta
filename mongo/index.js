@@ -1,20 +1,21 @@
-const mongoose=require("mongoose");
-const { log } = require("node:console");
+const express=require("express");
+const app=express();
+const mongoose = require('mongoose');
+const path=require(path);
+app.set("views",path.join(__dirname,"viewws"));
+app.set("view engine","ejs");
 main()
-.then(res =>{
-    console.log("connnection succesfull");
+
+.then(()=>{
+    console.log("connection successful")
 })
 .catch(err => console.log(err));
 async function main() {
-    await mongoose.connect("mongodb://127.0.0.1:27017/test");
+  await mongoose.connect('mongodb://127.0.0.1:27017/chatapp');
 }
-const userschema=new mongoose.Schema({
-    name: String,
-    email: String,
-    age: Number
+app.get("/",(req,res)=>{
+    res.send("app working");
 });
-const user=mongoose.model("user",userschema);
-user.deleteOne({name:"anmol"}).then(res=>{
-    console.log(res);
-    
-})
+app.listen(3000,()=>{
+    console.log("app is listening")
+});

@@ -2,5 +2,18 @@
     background-color: rgb(220, 239, 255);
     border: solid black 1px;
     border-radius: 10px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+h4{
     padding-left: 22px;
+}
+h3{
+    padding-left: 10px;
+}
+.msg{
+    background-color: rgb(174, 206, 255);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }

@@ -14,7 +14,7 @@ const chatschema = new mongoose.Schema({
     },
     created_at:{
         type: Date,
-        required:true
+        default:new Date()
     }
 });
 const chat=mongoose.model("chat",chatschema);

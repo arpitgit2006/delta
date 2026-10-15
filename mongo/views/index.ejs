@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <h3>ChatApp</h3>
+    <h2>ChatApp</h2>
     <% for(let c of chats){ %>
         <div class="box">
             <h4>from: <%= c.from %></h4>
             <div class="msg">
-                <%= c.message %>
+                <h3><%= c.message %></h3>
             </div>
             <h4>to: <%= c.to %></h4>
         </div>
-        <hr>
     <%}%>
+    <form method="get" action="/chats/new">
+        <button>enter chat</button>
+    </form>
 
 </body>
 </html>
